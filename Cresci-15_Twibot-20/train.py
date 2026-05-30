@@ -195,27 +195,17 @@ def main(seed):
         train(epoch,model,criterion,optimizer,scheduler)
         
 
-        acc,f1,acc_twibot,f1_twibot,acc_cresci,f1_cresci = test(model)
+        acc,f1 = val(model,criterion)
         if acc > best_acc:
             best_acc = acc
             best_f1 = f1
             best_epoch = epoch+1
-
-            best_acc_twibot = acc_twibot
-            best_f1_twibot = f1_twibot
-            best_acc_cresci = acc_cresci
-            best_f1_cresci = f1_cresci
 
             torch.save(model, "./trained_model_param/all/gpt/MY_MODEL.pt")
     print('seed = ',seed,flush=True)
     print('best test accuracy = ',best_acc,flush=True)
     print('best test f1 score = ',best_f1,flush=True)
     print('best test epoch = ',best_epoch,flush=True)
-
-    print('best test accuracy twibot = ',best_acc_twibot,flush=True)
-    print('best test f1 score twibot = ',best_f1_twibot,flush=True)
-    print('best test accuracy cresci = ',best_acc_cresci,flush=True)
-    print('best test f1 score cresci = ',best_f1_cresci,flush=True)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
