@@ -1,4 +1,4 @@
-# BotMoE Reposiotry
+# Social-Media-Bot-Detection-by-Fusing-Multimodal-Information-with-Large-Language-Models
 
 This is the official repo for [Social-Media-Bot-Detection-by-Fusing-Multimodal-Information-with-Large-Language-Models]
 
