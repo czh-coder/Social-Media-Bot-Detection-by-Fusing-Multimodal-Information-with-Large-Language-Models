@@ -18,7 +18,7 @@ For other datasets, please visit the [Bot Repository](https://botometer.osome.iu
 
 We also provide the processed files for each dataset, they are available at [Google Drive](https://drive.google.com/drive/folders/1MupKMFU26FnwWCMJUP5BjiAeGjwIF1YU?usp=sharing). The Twibot-22 dataset in this link is the sampled dataset. 
 
-## Step 4 Train the LM
+## Step 3 Train the LM
 Remember to change the parameters in train_LM/main.py and put the dataset in the corresponding location. For each dataset in [Google Drive](https://drive.google.com/drive/folders/1MupKMFU26FnwWCMJUP5BjiAeGjwIF1YU?usp=sharing), we also provide results for the trained LM outputs for different LLMs, which names "embeddings_iter_xxx.pt".
 
 ```
@@ -37,7 +37,7 @@ Then you can start training the LM!
     python main.py
 ```
 
-## Step 5 Train and Test the Model
+## Step 4 Train and Test the Model
 
 Remember to modify the dataset path in the train.py file and Dataset.py file for each dataset and put the dataset in the corresponding location.
 
